@@ -1,10 +1,17 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Index from '@/views/Index'
-import List from '../views/list/List'
+import Detail from '../views/detail/Detail'
+import Like from '../views/like/Like.vue'
+import Comments from '../views/comments/Comments.vue'
+import Vote from '../views/vote/Vote.vue'
+import Join from '../views/join/Join.vue'
 
 Vue.use(Router)
-
+Router.prototype.goBack = function () {
+  this.isBack = true
+  window.history.go(-1)
+}
 export default new Router({
   routes: [
     {
@@ -18,9 +25,29 @@ export default new Router({
       component: Index
     },
     {
-      path: '/list',
-      name: 'list',
-      component: List
+      path: '/detail/:id',
+      name: 'detail',
+      component: Detail
+    },
+    {
+      path: '/like',
+      name: 'like',
+      component: Like
+    },
+    {
+      path: '/comments',
+      name: 'comments',
+      component: Comments
+    },
+    {
+      path: '/vote',
+      name: 'vote',
+      component: Vote
+    },
+    {
+      path: '/join',
+      name: 'join',
+      component: Join
     }
   ]
 })

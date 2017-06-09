@@ -1,16 +1,13 @@
 <template>
-  <div>
-    list view page
-  </div>
 </template>
 <script>
 export default {
-  name: 'List',
+  name: 'vote',
   data () {
     return {
     }
   }
 }
 </script>
-<style lang='css' scoped>
+<style lang="less" scoped>
 </style>

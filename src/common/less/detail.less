@@ -1,0 +1,263 @@
+/* 社区活动详情页*/
+a{
+    color: #000
+}
+.act-detail {
+    padding-bottom: 2.5rem
+}
+
+.act-detail .banner {
+    display: block;
+    width: 100%;
+    height: 10rem;
+}
+
+.act-detail .banner img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.act-detail .title {
+    padding: .5rem .75rem;
+    background: white;
+}
+
+.act-detail .title h1 {
+    line-height: 1.2rem;
+    font-size: .9rem;
+}
+
+.act-detail .list-sec {
+    display: block;
+    padding-left: .75rem;
+    margin-top: .75rem;
+    background: white;
+}
+
+.act-detail .list-sec .list-sec-item {
+    padding: .5rem 0;
+    border-bottom: 1px solid #C8C7CC;
+}
+
+.act-detail .list-sec .list-sec-item i {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    line-height: 1rem;
+    margin-right: .5rem;
+    font-size: 1rem;
+}
+
+.act-detail .list-sec-item .list-sec-item-t {
+    height: 1rem;
+    line-height: 1rem;
+    font-size: .8rem;
+}
+
+.act-detail .like-sec {
+    display: block;
+}
+
+.act-detail .like-sec .list-sec-item i {
+    height: 2rem;
+    line-height: 2rem;
+}
+
+.act-detail .like-sec .list-sec-item-t {
+    height: 2rem;
+    line-height: 2rem;
+}
+
+.act-detail .like-sec ul {
+    height: 2rem;
+    padding-right: .75rem;
+    font-size: 0;
+    text-align: right;
+}
+
+.act-detail .like-sec ul li {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+    margin-left: -.6rem;
+    font-size: .8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.act-detail .like-sec ul li img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.act-detail .like-sec ul li.like-num {
+    background: #F67474;
+    color: #fff;
+    line-height: 2rem;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.act-detail .det {
+    margin-top: .75rem;
+    padding: .2rem 0 .5rem .75rem;
+    font-size: .8rem;
+    background: white;
+}
+
+.act-detail .det h1,
+.comments-wrapper h1 {
+    line-height: 2.1rem;
+    font-size: .8rem;
+}
+
+.act-detail .det-bd {
+    padding: .5rem .75rem 0 0;
+    line-height: 1.2;
+    color: #000;
+    border-top: 1px solid #c8c7cc;
+}
+
+.act-detail .det-bd img {
+    display: block;
+    width: 100%;
+    margin: .5rem 0;
+}
+
+.comments {
+    padding-bottom: .3rem;
+}
+
+.comments-hd {
+    padding-bottom: .3rem;
+}
+
+.comments .user-avator {
+    width: 2rem;
+    height: 2rem;
+    margin-right: .5rem;
+    overflow: hidden;
+}
+
+.comments .user-avator img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 50%;
+}
+
+.comments .user-name {
+    font-size: .8rem;
+    color: #000;
+}
+
+.comments-bd {
+    font-size: .7rem;
+    color: #000;
+    line-height: 1.3;
+}
+
+.comments .time {
+    padding: .3rem 0;
+    font-size: .7rem;
+    color: #c8c7cc;
+}
+
+.act-detail .comments .view-all {
+    display: block;
+    width: 5rem;
+    height: 1.5rem;
+    margin: 0 auto;
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: .6rem;
+    border-radius: .2rem;
+    border: 1px solid #c8c7cc;
+}
+
+.act-detail .vote-sec {
+    position: relative;
+}
+
+.act-detail .vote-sec::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid #c7c7c7;
+    border-right: 1px solid #c7c7c7;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+}
+
+.act-detail .vote-sec .list-sec-item {
+    border-bottom: none;
+}
+
+.fixed-btn {
+    background: white;
+    height: 2.4rem;
+}
+
+.fixed-btn .like-btn {
+    width: 3.1rem;
+    height: 2.4rem;
+    padding: .3rem .75rem .1rem .75rem;
+    margin-left: .75rem;
+}
+
+.fixed-btn .like-btn i {
+    display: block;
+    height: 1.1rem;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #E45D50;
+}
+
+.fixed-btn .like-btn span {
+    display: block;
+    padding-top: .2rem;
+    text-align: center;
+    font-size: .6rem;
+}
+
+.fixed-btn .comment-btn {
+    width: 3.1rem;
+    height: 2.4rem;
+    padding: .3rem .75rem .1rem .75rem;
+    margin-right: .75rem;
+}
+
+.fixed-btn .comment-btn i {
+    display: block;
+    height: 1.1rem;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #FFB65A;
+}
+
+.fixed-btn .comment-btn span {
+    display: block;
+    padding-top: .2rem;
+    text-align: center;
+    font-size: .6rem;
+}
+
+.fixed-btn .jion-btn {
+    display: block;
+    text-align: center;
+    line-height: 2.4rem;
+    font-size: .8rem;
+    color: white;
+    background: #FCA02D;
+}
+
+.fixed-btn .jion-btn.disabled {
+    background: #c8c7cc;
+}

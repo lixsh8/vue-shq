@@ -1,0 +1,83 @@
+@import "reset.less";
+@import "variable.less";
+@import "common.less";
+
+body,
+html {
+    background: url(../images/gp_body_bg.png) repeat;
+    position: relative;
+    color: #000;
+    height: 100%;
+    min-height: 100%;
+}
+
+.ml-20 {
+    margin-left: 1rem;
+}
+
+.mt-10 {
+    margin-top: 10px
+}
+
+.header h1 {
+    font-size: .85rem;
+}
+
+.btn-wrap {
+    margin-top: 3rem;
+}
+
+.btn-primary {
+    background: #FCA02D;
+    font-size: .8rem;
+}
+
+
+/* 社区活动列表页*/
+.act-list{
+    position: absolute;
+    width: 100%;
+    top:2.5rem;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 2;
+}
+.act-list .list-item {
+    margin-top: .5rem;
+    background: #fff;
+}
+
+.act-list .list-item .banner img {
+    display: block;
+    width: 100%;
+    height: 10rem;
+}
+
+.act-list .list-item h1 {
+    padding: .8rem .5rem .3rem .5rem;
+    font-size: .8rem;
+    line-height: 1.5;
+}
+
+.act-list .list-item h6 {
+    padding: 0 .5rem .8rem;
+    font-size: .7rem;
+    color: #A0A0A0;
+}
+
+.act-list .list-item h6 i,
+span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.act-list .list-item h6 i {
+    width: 1.2rem;
+    height: 1rem;
+    padding-right: .15rem;
+    font-size: 1rem!important;
+}
+.act-list a h1{
+    color: #000;
+}

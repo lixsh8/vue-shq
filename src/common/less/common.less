@@ -1,0 +1,787 @@
+@charset "utf-8";
+html {
+    background: #e7e7e7;
+    font-size: 12px;
+}
+
+
+/*响应式rem 640基准图 html*/
+
+html.ui-responsive {
+    font-size: 20px;
+}
+
+@media only screen and (min-width: 375px) {
+    html.ui-responsive {
+        font-size: 23.4375px !important;
+    }
+}
+
+@media only screen and (min-width: 401px) {
+    html.ui-responsive {
+        font-size: 25px !important;
+    }
+}
+
+@media only screen and (min-width: 428px) {
+    html.ui-responsive {
+        font-size: 26.75px !important;
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    html.ui-responsive {
+        font-size: 30px !important;
+    }
+}
+
+@media only screen and (min-width: 569px) {
+    html.ui-responsive {
+        font-size: 35px !important;
+    }
+}
+
+@media only screen and (min-width: 641px) {
+    html.ui-responsive {
+        font-size: 40px !important;
+    }
+}
+
+
+/*响应式rem750基准图 html*/
+
+.ui-responsive-750 {
+    font-size: 20px;
+}
+
+@media only screen and (min-width: 320px) {
+    .ui-responsive-750 {
+        font-size: 17.067px !important;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    .ui-responsive-750 {
+        font-size: 20px !important;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .ui-responsive-750 {
+        font-size: 21.33px !important;
+    }
+}
+
+@media only screen and (min-width: 428px) {
+    .ui-responsive-750 {
+        font-size: 22.8267px !important;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .ui-responsive-750 {
+        font-size: 25.6px !important;
+    }
+}
+
+@media only screen and (min-width: 570px) {
+    .ui-responsive-750 {
+        font-size: 30.4px !important;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    .ui-responsive-750 {
+        font-size: 34.133px !important;
+    }
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+
+/*清除浮动*/
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/*flex box */
+
+.exce-flex-wrap {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.exce-flex-item {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+}
+
+
+/* text ellipsis  通用样式 common*/
+
+.txt-ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.txt-l {
+    text-align: left;
+}
+
+.txt-r {
+    text-align: right;
+}
+
+.of-hidden {
+    overflow: hidden
+}
+
+.dbline-ellipsis {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+
+/*箭头*/
+
+.pr-15 {
+    padding-right: 15px
+}
+
+.arr-l::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(-45deg);
+}
+
+.arr-r::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+}
+
+
+/*   带返回的头部header   */
+
+// .header{width:100%;height:44px;line-height:44px;position:fixed;background:#51c117;color:#fff;top:0;left:0;}
+// .header-cover{width:100%;height:44px;}
+// .header .header-l{min-width:44px;height:44px;display:inline-block;position:absolute;top:0;left:0px;padding:0 10px;box-sizing:content-box;color:#fff;}
+// .header .header-r{min-width:44px;height:44px;display:inline-block;position:absolute;top:0;right:0px;padding:0 10px;box-sizing:content-box;color:#fff;}
+// .header h1{text-align:center;font-size:18px;}
+
+/*   三栏    */
+
+.ui-grid-trisect::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.ui-grid-trisect li {
+    width: 33.33%;
+    float: left;
+}
+
+
+/*列表*/
+
+.ui-list {
+    background: #fff;
+    font-size: 15px;
+}
+
+.ui-list-link .ui-list-item a::after,
+.ui-list-link .ui-list-item .curPage::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+}
+
+.ui-list-item {
+    line-height: 44px;
+    min-height: 44px;
+    padding: 0 15px;
+    position: relative;
+    font-size: 15px;
+}
+
+.ui-list-border-b .ui-list-item {
+    border-bottom: 1px solid #ccc;
+}
+
+.ui-list-item div {
+    text-align: right;
+}
+
+.ui-list-item div.txt-l {
+    text-align: left;
+}
+
+.ui-list-item .txt-ellipsis {
+    width: 100%;
+    height: 100%;
+    padding-right: 0!important;
+}
+
+.ui-list-link .ui-list-item a>div {
+    padding-right: 15px;
+}
+
+.ui-list .ui-list-t {
+    width: 72px;
+    text-align: left!important;
+    padding-right: 15px;
+    font-size: 15px;
+}
+
+.ui-list .ui-list-textarea {
+    height: auto;
+}
+
+.ui-list textarea {
+    font-size: 15px;
+}
+
+.ui-list .ui-list-single {
+    text-align: center;
+    width: 100%;
+}
+
+.ui-list-noPadding .ui-list-item {
+    padding: 0!important
+}
+
+.ui-list .ui-list-item input {
+    display: block;
+    width: 100%;
+    height: 42px;
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
+    text-align: right;
+    font-size: 15px!important;
+}
+
+.ui-list.ui-list-input-text-l input {
+    text-align: left;
+    padding-left: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*多行*/
+
+.ui-list-multiLine .ui-list-item {
+    height: auto;
+    line-height: normal;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.ui-list-multiLine .ui-list-item .ui-list-t {
+    width: 60%;
+    text-align: left
+}
+
+.ui-list-multiLine .ui-list-item .ui-list-b {
+    text-align: right;
+}
+
+.ui-list-multiLine .ui-list-item b {
+    display: block;
+    line-height: ;
+    font-size: 14px;
+}
+
+.ui-list-multiLine .ui-list-item span {
+    display: block;
+    line-height: ;
+    color: #c4c4c4;
+}
+
+
+/*按钮*/
+
+.btn-wrap {
+    padding: 0 56px;
+}
+
+.btn {
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    border-radius: 22px;
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background: #eebd44;
+}
+
+.btn-lg {
+    width: 100%;
+    font-size: 16px;
+}
+
+.btn-disabled {
+    background: #93979F;
+    color: #fff;
+}
+
+.fixed-btn {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 9
+}
+
+.footer-cover {
+    height: 2.6rem;
+}
+
+
+/*table*/
+
+.table,
+.table .tr {
+    width: 100%;
+}
+
+.table .tr::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.table .td,
+.table .th {
+    display: block;
+    float: left;
+}
+
+.table .thead .th {
+    font-size: 14px;
+}
+
+.table .col-2 {
+    width: 50%;
+}
+
+.table .col-3 {
+    width: 33.33%;
+}
+
+.table .col-4 {
+    width: 25%;
+}
+
+.table .col-5 {
+    width: 20%;
+}
+
+.table .ui-text-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+/**
+ * 弹窗类
+ */
+
+
+/*alert*/
+
+.alert {
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    top:0;
+    left: 0;
+    right:0;
+    bottom: 0
+}
+.alert-cnt{
+    position: absolute;
+    top:50%;
+    left:10%;
+    width:80%;
+    padding: 10px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    background: white;
+    border-radius: 5px; 
+}
+.ui-dialog {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+}
+
+.ui-dialog.on {
+    visibility: visible;
+}
+
+.ui-dialog .ui-dialog-bd {
+    width: 80%;
+    background: white;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: 10%;
+    top: 50%;
+    line-height: 1.5;
+    box-sizing: border-box;
+    padding: 10px;
+    -webkit-transform: translate(0, -50%)
+}
+
+.ui-dialog .ui-loading {
+    width: 5rem;
+    height: 5rem;
+    background: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    line-height: 1.5;
+    box-sizing: border-box;
+    padding: 10px;
+    -webkit-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.load-complete {
+    width: 100%;
+    padding: .5rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #000;
+    text-align: center;
+    font-size: .7rem;
+    z-index: 0;
+    display: none
+}
+
+
+/*dialog comfirm*/
+
+.ui-dialogC {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.ui-dialogC.show {
+    display: -webkit-box;
+    display: box;
+}
+
+.ui-dialogC-hd {
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    position: relative;
+}
+
+.ui-dialogC-cnt {
+    border-radius: 6px;
+    width: 270px;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    pointer-events: auto;
+    background-color: rgba(253, 253, 253, 0.95);
+    position: relative;
+    font-size: 16px;
+}
+
+.ui-dialogC-bd {
+    min-height: 71px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 18px;
+    display: -webkit-box;
+    display: box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    -webkit-box-orient: vertical;
+}
+
+.ui-dialogC-bd>h4 {
+    margin-bottom: 4px;
+    width: 100%;
+    font-size: 14px;
+    color: #444;
+    text-align: center;
+}
+
+.ui-dialogC-bd>div,
+.ui-dialogC-bd>ul {
+    width: 100%;
+}
+
+.ui-dialogC-ft {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    display: -webkit-box;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-align: center;
+    border-top: 1px solid #e0e0e0;
+    height: 42px;
+    line-height: 42px;
+}
+
+.ui-dialogC-close:before {
+    font-family: "iconfont" !important;
+    font-size: 32px;
+    line-height: 44px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    display: block;
+    color: rgba(0, 0, 0, 0.5);
+    content: "";
+    color: #828282;
+    display: block;
+    line-height: 32px;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+
+.ui-dialogC-close:active {
+    opacity: 0.5;
+}
+
+.ui-dialogC-ft button {
+    color: #444;
+    text-align: center;
+    width: 100%;
+    line-height: 42px;
+    background: transparent;
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    border-right: 1px #e0e0e0 solid;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #fff;
+    display: block;
+    margin: 0 !important;
+    -webkit-box-flex: 1;
+}
+
+.ui-dialogC-ft button:active {
+    background-color: rgb(220, 220, 220) !important;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ui-dialogC-ft button:first-child {
+    border-bottom-left-radius: 6px;
+}
+
+.ui-dialogC-ft button:last-child {
+    border-right: 0;
+    border-bottom-right-radius: 6px;
+}
+
+
+/* 弹出输入框 */
+
+.ui-dialogCmt {
+    display: block;
+    display: none;
+}
+
+.ui-dialogCmt .ui-dialogC-cnt {
+    background: #f8f8f8;
+    top: 70px;
+    width: 76%;
+    position: absolute;
+    left: 12%;
+}
+
+.ui-dialogCmt .ui-dialogC-hd {
+    font-size: 16px;
+}
+
+.ui-dialogCmt .ui-dialogC-bd {
+    padding: 0 18px 10px 18px;
+}
+
+.ui-dialogCmt .ui-dialogC-bd textarea {
+    box-shadow: none;
+    display: block;
+    width: 100%;
+    height: 74px;
+    background: white;
+    border: 1px solid #c8c7cc;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 1.3;
+    word-break: break-all;
+    word-wrap: break-word;
+    padding: 10px;
+}
+
+.ui-dialogCmt .ui-dialogC-ft {
+    border-top: 1px solid #c8c7cc;
+}
+
+.ui-dialogCmt .ui-dialogC-ft button {
+    background: #f8f8f8;
+    border-right: 1px #c8c7cc solid;
+    color: #0076FF;
+    font-size: 16px;
+}
+
+
+/*tab*/
+
+.ui-tab {
+    width: 100%;
+    overflow: hidden;
+}
+
+.ui-tab-nav {
+    width: 100%;
+    display: box;
+    display: -webkit-box;
+    font-size: 16px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #fff
+}
+
+.ui-tab-content {
+    display: -webkit-box;
+}
+
+.ui-tab-content>li {
+    -webkit-box-flex: 1;
+    width: 100%;
+}
+
+.ui-tab-nav li {
+    min-width: 70px;
+    box-flex: 1;
+    -webkit-box-flex: 1;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    width: 50%;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #ccc;
+}
+
+.ui-tab-nav li span {
+    display: inline-block;
+    height: 100%;
+    font-size: 14px;
+}
+
+.ui-tab-nav li.current span {
+    color: #444;
+    border-bottom: 3px solid #ffd800;
+}
+
+
+/*无数据*/
+
+.noData {
+    width: 90px;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+
+.noData img {
+    display: block;
+    width: 90px;
+    height: 70px;
+}
+
+.noData h6 {
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+    color: #a2a1a8;
+}
