@@ -1,6 +1,6 @@
 <template>
   <div>
-    <vHead></vHead>
+    <vHead :vtitle="'详情'"></vHead>
     <section class="act-detail">
       <div class="banner"><img id="bannerImg" :src="this.info.converImage" /></div>
       <div class="title">

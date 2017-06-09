@@ -9,7 +9,7 @@ import '../static/fonts/iconfont.css'
 
 Vue.prototype.$http = axios
 Vue.prototype.$url = 'http://120.24.175.112:6080'
-Vue.prototype.$token = '0d41a663-d97e-45f2-901a-32bd4a0c8518'
+Vue.prototype.$token = '4fc5156d-1e77-48a1-9687-765409322cff'
 
 Vue.config.productionTip = false
 

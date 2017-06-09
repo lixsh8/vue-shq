@@ -10,7 +10,7 @@ export function formatTime(str, format) {
   }
   var dateTime = new Date(str)
     
-  Date.prototype.Format = function (fmt) { // author: meizz 
+  Date.prototype.Format = function (fmt) { 
     var o = {
       'M+': this.getMonth() + 1, // 月份 
       'd+': this.getDate(), // 日 
@@ -25,13 +25,6 @@ export function formatTime(str, format) {
     return fmt
   }
   return dateTime.Format(format)
-}
-function paddingZero(n) {
-  if (n < 10) {
-    return '0' + n
-  } else {
-    return n
-  }
 }
 
 /**
@@ -70,3 +63,22 @@ export function alert(txt, t) {
     }, time)
   }
 }
+
+/***
+ * 滚动加载更多
+ * 
+ */
+(function() {
+  // function Scroll() {
+  //   this.bindEvent()
+  // }
+  // Scroll.prototype = {
+  //   bindEvent: function() {
+  //     window.addEventListener('scroll', function(e) {
+  //       console.log(document.body.scrollTop)
+  //     })
+  //   }
+  // }
+  // window.Scroll = Scroll
+})()
+

@@ -28,6 +28,7 @@ module.exports = {
     'padded-blocks': 0,
     'no-extend-native': 0,
     'no-unused-vars': 0,
-    'eol-last': 0
+    'eol-last': 0,
+    'no-multiple-empty-lines': 0
   }
 }

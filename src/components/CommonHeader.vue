@@ -1,9 +1,9 @@
 <template>
   <div class="comHeader">
     <!-- 头部 -->
-    <header class="header header-native">
+    <header class="header header-native" ref="headDom">
       <a href="javascript:void(0)" @click="goback()" class="header-l arr-l"></a>
-      <h1 id="">活动详情</h1>
+      <h1>{{this.vtitle}}</h1>
     </header>
     <div class="header-cover header-cover-native"></div>
   </div>
@@ -12,6 +12,12 @@
 <script>
 export default {
   name: 'tabHeader',
+  data () {
+    return {
+      title: '活动详情'
+    }
+  },
+  props: ['vtitle'],
   methods: {
     getHeaderHeight() {
       return this.$refs.headDom.offsetHeight
@@ -36,6 +42,7 @@ export default {
   color: #fff;
   top: 0;
   left: 0;
+  z-index: 8;
 
   &.header-native {
     padding-top: 1rem;

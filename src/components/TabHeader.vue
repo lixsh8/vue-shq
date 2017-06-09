@@ -32,6 +32,7 @@
     top:0;
     left:0;
     background: @headerBgColor;
+    z-index: 8;
   }
   .native-header{
     padding-top: 1rem;
